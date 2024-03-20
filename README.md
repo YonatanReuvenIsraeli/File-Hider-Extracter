@@ -1,2 +1,2 @@
 # File-Hider-Extacter
-A tool for Alternate Data Steams.
+A tool for Alternate Data Streams.
