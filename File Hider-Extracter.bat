@@ -147,8 +147,7 @@ echo.
 set /p Show1="Which file that the alternate data stream is hidden in? "
 if not exist "%Path%\%Show1%" goto NotShow1
 echo.
-set /p Show2="What is the name of the alternate data stream? "
-if not exist "%Path%\%Show2%" goto NotShow2
+set /p Show2="What is the name of the alternate data stream? "
 echo.
 set /p Show3="What will you like to name the extracted file? "
 expand "%Show1%:"%Show2%" "%Show3%"
@@ -159,11 +158,7 @@ goto Main
 
 :NotShow1
 echo "%Path%\%Show1%" does not exist!
-goto 2
-
-:NotShow2
-echo "%Path%\%Show2%" does not exist!
-goto 1
+goto 2
 
 :Main
 echo.
