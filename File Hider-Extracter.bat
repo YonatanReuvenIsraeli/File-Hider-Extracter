@@ -151,6 +151,7 @@ set /p Show2="What is the name of the alternate data stream? "
 echo.
 set /p Show3="What will you like to name the extracted file? "
 expand "%Show1%:"%Show2%" "%Show3%"
+if errorlevel 1 goto Error
 echo.
 echo Alternate data stream exracted! Press any key to go to the main menu.
 pause >nul
@@ -159,6 +160,11 @@ goto Main
 :NotShow1
 echo "%Path%\%Show1%" does not exist!
 goto 2
+
+:Error
+echo.
+echo Error! please try again.
+goto 2
 
 :Main
 echo.
