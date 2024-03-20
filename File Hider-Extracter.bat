@@ -12,39 +12,38 @@ set /p input="What do you want to do? (1-3) "
 if /i "%input%"=="1" goto 1
 if /i "%input%"=="2" goto 2
 if /i "%input%"=="2" goto 3
-
 echo Invalid Syntax
 goto Main
 
 :1
 echo.
-set /p DriveLetter="What drive are the files in? (A:-Z:)
-if /i "%DriveLetter%"=="A:" goto SureDriveLetter
-if /i "%DriveLetter%"=="B:" goto SureDriveLetter
-if /i "%DriveLetter%"=="C:" goto SureDriveLetter
-if /i "%DriveLetter%"=="D:" goto SureDriveLetter
-if /i "%DriveLetter%"=="E:" goto SureDriveLetter
-if /i "%DriveLetter%"=="F:" goto SureDriveLetter
-if /i "%DriveLetter%"=="G:" goto SureDriveLetter
-if /i "%DriveLetter%"=="H:" goto SureDriveLetter
-if /i "%DriveLetter%"=="I:" goto SureDriveLetter
-if /i "%DriveLetter%"=="J:" goto SureDriveLetter
-if /i "%DriveLetter%"=="K:" goto SureDriveLetter
-if /i "%DriveLetter%"=="L:" goto SureDriveLetter
-if /i "%DriveLetter%"=="M:" goto SureDriveLetter
-if /i "%DriveLetter%"=="N:" goto SureDriveLetter
-if /i "%DriveLetter%"=="O:" goto SureDriveLetter
-if /i "%DriveLetter%"=="P:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Q:" goto SureDriveLetter
-if /i "%DriveLetter%"=="R:" goto SureDriveLetter
-if /i "%DriveLetter%"=="S:" goto SureDriveLetter
-if /i "%DriveLetter%"=="T:" goto SureDriveLetter
-if /i "%DriveLetter%"=="U:" goto SureDriveLetter
-if /i "%DriveLetter%"=="V:" goto SureDriveLetter
-if /i "%DriveLetter%"=="W:" goto SureDriveLetter
-if /i "%DriveLetter%"=="X:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Y:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Z:" goto SureDriveLetter
+set /p DriveLetter="What drive are the files in? (A:-Z:) "
+if /i "%DriveLetter%"=="A:" goto DriveLetter
+if /i "%DriveLetter%"=="B:" goto DriveLetter
+if /i "%DriveLetter%"=="C:" goto DriveLetter
+if /i "%DriveLetter%"=="D:" goto DriveLetter
+if /i "%DriveLetter%"=="E:" goto DriveLetter
+if /i "%DriveLetter%"=="F:" goto DriveLetter
+if /i "%DriveLetter%"=="G:" goto DriveLetter
+if /i "%DriveLetter%"=="H:" goto DriveLetter
+if /i "%DriveLetter%"=="I:" goto DriveLetter
+if /i "%DriveLetter%"=="J:" goto DriveLetter
+if /i "%DriveLetter%"=="K:" goto DriveLetter
+if /i "%DriveLetter%"=="L:" goto DriveLetter
+if /i "%DriveLetter%"=="M:" goto DriveLetter
+if /i "%DriveLetter%"=="N:" goto DriveLetter
+if /i "%DriveLetter%"=="O:" goto DriveLetter
+if /i "%DriveLetter%"=="P:" goto DriveLetter
+if /i "%DriveLetter%"=="Q:" goto DriveLetter
+if /i "%DriveLetter%"=="R:" goto DriveLetter
+if /i "%DriveLetter%"=="S:" goto DriveLetter
+if /i "%DriveLetter%"=="T:" goto DriveLetter
+if /i "%DriveLetter%"=="U:" goto DriveLetter
+if /i "%DriveLetter%"=="V:" goto DriveLetter
+if /i "%DriveLetter%"=="W:" goto DriveLetter
+if /i "%DriveLetter%"=="X:" goto DriveLetter
+if /i "%DriveLetter%"=="Y:" goto DriveLetter
+if /i "%DriveLetter%"=="Z:" goto DriveLetter
 echo Invalid Syntax!
 goto CheckExist
 
