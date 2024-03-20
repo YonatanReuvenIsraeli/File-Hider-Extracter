@@ -115,7 +115,7 @@ if /i "%DriveLetter%"=="S:" goto CheckExist2
 if /i "%DriveLetter%"=="T:" goto CheckExist2
 if /i "%DriveLetter%"=="U:" goto CheckExist2
 if /i "%DriveLetter%"=="V:" goto CheckExist2
-if /i "%DriveLetter%"=="W:" goto SCheckExist2
+if /i "%DriveLetter%"=="W:" goto CheckExist2
 if /i "%DriveLetter%"=="X:" goto CheckExist2
 if /i "%DriveLetter%"=="Y:" goto CheckExist2
 if /i "%DriveLetter%"=="Z:" goto CheckExist2
