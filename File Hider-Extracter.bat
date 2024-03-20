@@ -78,7 +78,7 @@ echo.
 set /p Hide3="What will you like to name this alternate data stream? "
 type  %Hide1% > %Hide2%:%Hide3%
 echo.
-echo alternate data stream created! Press any key to go to the main menu.
+echo Alternate data stream created! Press any key to go to the main menu.
 pause >nul
 goto Main
 
@@ -153,7 +153,7 @@ echo.
 set /p Show3="What will you like to name the extracted file? "
 expand %Show1%:%Show2% %Show3%
 echo.
-echo alternate data stream exracted! Press any key to go to the main menu.
+echo Alternate data stream exracted! Press any key to go to the main menu.
 pause >nul
 goto Main
 
