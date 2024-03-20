@@ -11,7 +11,7 @@ echo [3] Close
 set /p input="What do you want to do? (1/3) "
 if /i "%input%"=="1" goto 1
 if /i "%input%"=="2" goto 2
-if /i "%input%"=="2" goto 4
+if /i "%input%"=="2" goto 3
 
 echo Invalid Syntax
 goto Main
