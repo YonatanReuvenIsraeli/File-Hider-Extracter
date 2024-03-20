@@ -18,36 +18,36 @@ goto Main
 :1
 echo.
 set /p DriveLetter="What drive are the files in? (A:-Z:) "
-if /i "%DriveLetter%"=="A:" goto CheckExist
-if /i "%DriveLetter%"=="B:" goto CheckExist
-if /i "%DriveLetter%"=="C:" goto CheckExist
-if /i "%DriveLetter%"=="D:" goto CheckExist
-if /i "%DriveLetter%"=="E:" goto CheckExist
-if /i "%DriveLetter%"=="F:" goto CheckExist
-if /i "%DriveLetter%"=="G:" goto CheckExist
-if /i "%DriveLetter%"=="H:" goto CheckExist
-if /i "%DriveLetter%"=="I:" goto CheckExist
-if /i "%DriveLetter%"=="J:" goto CheckExist
-if /i "%DriveLetter%"=="K:" goto CheckExist
-if /i "%DriveLetter%"=="L:" goto CheckExist
-if /i "%DriveLetter%"=="M:" goto CheckExist
-if /i "%DriveLetter%"=="N:" goto CheckExist
-if /i "%DriveLetter%"=="O:" goto CheckExist
-if /i "%DriveLetter%"=="P:" goto CheckExist
-if /i "%DriveLetter%"=="Q:" goto CheckExist
-if /i "%DriveLetter%"=="R:" goto CheckExist
-if /i "%DriveLetter%"=="S:" goto CheckExist
-if /i "%DriveLetter%"=="T:" goto CheckExist
-if /i "%DriveLetter%"=="U:" goto CheckExist
-if /i "%DriveLetter%"=="V:" goto CheckExist
-if /i "%DriveLetter%"=="W:" goto CheckExist
-if /i "%DriveLetter%"=="X:" goto CheckExist
-if /i "%DriveLetter%"=="Y:" goto CheckExist
-if /i "%DriveLetter%"=="Z:" goto CheckExist
+if /i "%DriveLetter%"=="A:" goto CheckExist1
+if /i "%DriveLetter%"=="B:" goto CheckExist1
+if /i "%DriveLetter%"=="C:" goto CheckExist1
+if /i "%DriveLetter%"=="D:" goto CheckExist1
+if /i "%DriveLetter%"=="E:" goto CheckExist1
+if /i "%DriveLetter%"=="F:" goto CheckExist1
+if /i "%DriveLetter%"=="G:" goto CheckExist1
+if /i "%DriveLetter%"=="H:" goto CheckExist1
+if /i "%DriveLetter%"=="I:" goto CheckExist1
+if /i "%DriveLetter%"=="J:" goto CheckExist1
+if /i "%DriveLetter%"=="K:" goto CheckExist1
+if /i "%DriveLetter%"=="L:" goto CheckExist1
+if /i "%DriveLetter%"=="M:" goto CheckExist1
+if /i "%DriveLetter%"=="N:" goto CheckExist1
+if /i "%DriveLetter%"=="O:" goto CheckExist1
+if /i "%DriveLetter%"=="P:" goto CheckExist1
+if /i "%DriveLetter%"=="Q:" goto CheckExist1
+if /i "%DriveLetter%"=="R:" goto CheckExist1
+if /i "%DriveLetter%"=="S:" goto CheckExist1
+if /i "%DriveLetter%"=="T:" goto CheckExist1
+if /i "%DriveLetter%"=="U:" goto CheckExist1
+if /i "%DriveLetter%"=="V:" goto CheckExist1
+if /i "%DriveLetter%"=="W:" goto CheckExist1
+if /i "%DriveLetter%"=="X:" goto CheckExist1
+if /i "%DriveLetter%"=="Y:" goto CheckExist1
+if /i "%DriveLetter%"=="Z:" goto CheckExist1
 echo Invalid Syntax!
-goto CheckExist
+goto CheckExist1
 
-:CheckExist
+:CheckExist1
 if not exist "%DriveLetter%" goto NotExist1
 %DriveLetter%
 goto Path1
@@ -58,7 +58,7 @@ goto 1
 
 :Path1
 echo.
-set /p Path="What is the full path to your folder that contains the files?
+set /p Path="What is the full path to your folder that contains the files? "
 if not exist "%Path%" goto NotExistPath1
 cd %Path%
 echo.
@@ -80,36 +80,36 @@ goto 1
 :2
 echo.
 set /p DriveLetter="What drive are the file in? (A:-Z:) "
-if /i "%DriveLetter%"=="A:" goto SureDriveLetter
-if /i "%DriveLetter%"=="B:" goto SureDriveLetter
-if /i "%DriveLetter%"=="C:" goto SureDriveLetter
-if /i "%DriveLetter%"=="D:" goto SureDriveLetter
-if /i "%DriveLetter%"=="E:" goto SureDriveLetter
-if /i "%DriveLetter%"=="F:" goto SureDriveLetter
-if /i "%DriveLetter%"=="G:" goto SureDriveLetter
-if /i "%DriveLetter%"=="H:" goto SureDriveLetter
-if /i "%DriveLetter%"=="I:" goto SureDriveLetter
-if /i "%DriveLetter%"=="J:" goto SureDriveLetter
-if /i "%DriveLetter%"=="K:" goto SureDriveLetter
-if /i "%DriveLetter%"=="L:" goto SureDriveLetter
-if /i "%DriveLetter%"=="M:" goto SureDriveLetter
-if /i "%DriveLetter%"=="N:" goto SureDriveLetter
-if /i "%DriveLetter%"=="O:" goto SureDriveLetter
-if /i "%DriveLetter%"=="P:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Q:" goto SureDriveLetter
-if /i "%DriveLetter%"=="R:" goto SureDriveLetter
-if /i "%DriveLetter%"=="S:" goto SureDriveLetter
-if /i "%DriveLetter%"=="T:" goto SureDriveLetter
-if /i "%DriveLetter%"=="U:" goto SureDriveLetter
-if /i "%DriveLetter%"=="V:" goto SureDriveLetter
-if /i "%DriveLetter%"=="W:" goto SureDriveLetter
-if /i "%DriveLetter%"=="X:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Y:" goto SureDriveLetter
-if /i "%DriveLetter%"=="Z:" goto SureDriveLetter
+if /i "%DriveLetter%"=="A:" goto CheckExist2
+if /i "%DriveLetter%"=="B:" goto CheckExist2
+if /i "%DriveLetter%"=="C:" goto CheckExist2
+if /i "%DriveLetter%"=="D:" goto CheckExist2
+if /i "%DriveLetter%"=="E:" goto CheckExist2
+if /i "%DriveLetter%"=="F:" goto CheckExist2
+if /i "%DriveLetter%"=="G:" goto CheckExist2
+if /i "%DriveLetter%"=="H:" goto CheckExist2
+if /i "%DriveLetter%"=="I:" goto CheckExist2
+if /i "%DriveLetter%"=="J:" goto CheckExist2
+if /i "%DriveLetter%"=="K:" goto CheckExist2
+if /i "%DriveLetter%"=="L:" goto CheckExist2
+if /i "%DriveLetter%"=="M:" goto CheckExist2
+if /i "%DriveLetter%"=="N:" goto CheckExist2
+if /i "%DriveLetter%"=="O:" goto CheckExist2
+if /i "%DriveLetter%"=="P:" goto CheckExist2
+if /i "%DriveLetter%"=="Q:" goto CheckExist2
+if /i "%DriveLetter%"=="R:" goto CheckExist2
+if /i "%DriveLetter%"=="S:" goto CheckExist2
+if /i "%DriveLetter%"=="T:" goto CheckExist2
+if /i "%DriveLetter%"=="U:" goto CheckExist2
+if /i "%DriveLetter%"=="V:" goto CheckExist2
+if /i "%DriveLetter%"=="W:" goto SCheckExist2
+if /i "%DriveLetter%"=="X:" goto CheckExist2
+if /i "%DriveLetter%"=="Y:" goto CheckExist2
+if /i "%DriveLetter%"=="Z:" goto CheckExist2
 echo Invalid Syntax!
-goto CheckExist
+goto 2
 
-:CheckExist
+:CheckExist2
 if not exist "%DriveLetter%" goto NotExist2
 %DriveLetter%
 goto Path2
