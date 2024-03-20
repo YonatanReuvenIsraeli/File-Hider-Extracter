@@ -65,12 +65,12 @@ cd %Path%
 echo.
 set /p Hide1="Which file are you trying to hide? "
 echo.
-set /p Hide2="Which file are you trying to hide %Hide1% in? "
+set /p Hide2="Which file do you want to hide %Hide1% in? "
 echo.
-set /p Hide3="What will you like to name this Alternate Data Stream? "
+set /p Hide3="What will you like to name this alternate data stream? "
 type  %Hide1% > %Hide2%:%Hide3%
 echo.
-echo Alternate Data Stream created! Press any key to go to the main menu.
+echo alternate data stream created! Press any key to go to the main menu.
 pause >nul
 goto Main
 
@@ -125,14 +125,14 @@ set /p Path="What is the full path to your folder that contains the files? "
 if not exist "%Path%" goto NotExistPath2
 cd %Path%
 echo.
-set /p Show1="Which file that the Alternate Data Stream is hidden in? "
+set /p Show1="Which file that the alternate data stream is hidden in? "
 echo.
-set /p Show2="What is the name of the Alternate Data Stream file? "
+set /p Show2="What is the name of the alternate data stream? "
 echo.
 set /p Show3="What will you like to name the extracted file? "
 expand %Show1%:%Show2% %Show3%
 echo.
-echo Alternate Data Stream created! Press any key to go to the main menu.
+echo alternate data stream exracted! Press any key to go to the main menu.
 pause >nul
 goto Main
 
