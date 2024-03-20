@@ -1,2 +1,2 @@
 # File Hider/Extacter
-A tool for alternate sata streams.
+This tool allows you to hide and extract alternate data streams in Windows.
