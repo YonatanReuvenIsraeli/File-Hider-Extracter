@@ -53,7 +53,7 @@ if not exist "%DriveLetter%" goto NotExist1
 goto Path1
 
 :NotExist1
-echo %DriveLetter% does not exist. Please try again.
+echo "%DriveLetter%" does not exist. Please try again.
 goto 1
 
 :Path1
@@ -61,10 +61,19 @@ echo.
 set /p Path="What is the full path to your folder that contains the files? "
 if not exist "%Path%" goto NotExistPath1
 cd %Path%
+goto Hide
+
+:NotExistPath1
+echo "%Path%" does not exist. Please try again.
+goto 1
+
+:Hide
 echo.
 set /p Hide1="Which file are you trying to hide? "
+if not exist "%Path%\%Hide1%" goto NotHide1
 echo.
 set /p Hide2="Which file do you want to hide %Hide1% in? "
+if not exist "%Path%\%Hide1%" goto NotHide2
 echo.
 set /p Hide3="What will you like to name this alternate data stream? "
 type  %Hide1% > %Hide2%:%Hide3%
@@ -73,8 +82,12 @@ echo alternate data stream created! Press any key to go to the main menu.
 pause >nul
 goto Main
 
-:NotExistPath1
-echo %Path% does not exist. Please try again.
+:NotHide1
+echo "%Path%\%Hide1%" does not exist!
+goto 1
+
+:NotHide2
+echo "%Path%\%Hide2%" does not exist!
 goto 1
 
 :2
@@ -115,7 +128,7 @@ if not exist "%DriveLetter%" goto NotExist2
 goto Path2
 
 :NotExist2
-echo %DriveLetter% does not exist. Please try again.
+echo "%DriveLetter%" does not exist. Please try again.
 goto 2
 
 :Path2
@@ -123,10 +136,19 @@ echo.
 set /p Path="What is the full path to your folder that contains the files? "
 if not exist "%Path%" goto NotExistPath2
 cd %Path%
+goto Show
+
+:NotExistPath2
+echo "%Path%" does not exist. Please try again.
+goto 2
+
+:Show
 echo.
 set /p Show1="Which file that the alternate data stream is hidden in? "
+if not exist "%Path%\%Show1%" goto NotShow1
 echo.
 set /p Show2="What is the name of the alternate data stream? "
+if not exist "%Path%\%Show2%" goto NotShow2
 echo.
 set /p Show3="What will you like to name the extracted file? "
 expand %Show1%:%Show2% %Show3%
@@ -135,9 +157,13 @@ echo alternate data stream exracted! Press any key to go to the main menu.
 pause >nul
 goto Main
 
-:NotExistPath2
-echo %Path% does not exist. Please try again.
+:NotShow1
+echo "%Path%\%Show1%" does not exist!
 goto 2
+
+:NotShow2
+echo "%Path%\%Show2%" does not exist!
+goto 1
 
 :Main
 echo.
