@@ -1,2 +1,2 @@
 # File Hider/Extacter
-A tool for Alternate Data Streams.
+A tool for alternate sata streams.
