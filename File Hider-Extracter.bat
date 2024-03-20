@@ -76,7 +76,7 @@ set /p Hide2="Which file do you want to hide %Hide1% in? "
 if not exist "%Path%\%Hide2%" goto NotHide2
 echo.
 set /p Hide3="What will you like to name this alternate data stream? "
-type %Hide1% > %Hide2%:%Hide3%
+type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
 pause >nul
@@ -151,7 +151,7 @@ set /p Show2="What is the name of the alternate data stream? "
 if not exist "%Path%\%Show2%" goto NotShow2
 echo.
 set /p Show3="What will you like to name the extracted file? "
-expand %Show1%:%Show2% %Show3%
+expand "%Show1%:"%Show2%" "%Show3%"
 echo.
 echo Alternate data stream exracted! Press any key to go to the main menu.
 pause >nul
