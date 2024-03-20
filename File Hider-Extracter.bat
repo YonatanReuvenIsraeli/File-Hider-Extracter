@@ -73,7 +73,7 @@ set /p Hide1="Which file are you trying to hide? "
 if not exist "%Path%\%Hide1%" goto NotHide1
 echo.
 set /p Hide2="Which file do you want to hide %Hide1% in? "
-if not exist "%Path%\%Hide1%" goto NotHide2
+if not exist "%Path%\%Hide2%" goto NotHide2
 echo.
 set /p Hide3="What will you like to name this alternate data stream? "
 type %Hide1% > %Hide2%:%Hide3%
