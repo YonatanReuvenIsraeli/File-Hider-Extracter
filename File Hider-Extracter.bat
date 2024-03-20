@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title File Hider
-goto :Start
+goto Start
 
 :Start
 echo Do you want to-
@@ -139,7 +139,6 @@ goto :Main
 :NotExistPath2
 echo %Path% does not exist. Please try again.
 goto :2
-
 
 :Main
 echo.
