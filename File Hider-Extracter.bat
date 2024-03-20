@@ -18,32 +18,32 @@ goto Main
 :1
 echo.
 set /p DriveLetter="What drive are the files in? (A:-Z:) "
-if /i "%DriveLetter%"=="A:" goto DriveLetter
-if /i "%DriveLetter%"=="B:" goto DriveLetter
-if /i "%DriveLetter%"=="C:" goto DriveLetter
-if /i "%DriveLetter%"=="D:" goto DriveLetter
-if /i "%DriveLetter%"=="E:" goto DriveLetter
-if /i "%DriveLetter%"=="F:" goto DriveLetter
-if /i "%DriveLetter%"=="G:" goto DriveLetter
-if /i "%DriveLetter%"=="H:" goto DriveLetter
-if /i "%DriveLetter%"=="I:" goto DriveLetter
-if /i "%DriveLetter%"=="J:" goto DriveLetter
-if /i "%DriveLetter%"=="K:" goto DriveLetter
-if /i "%DriveLetter%"=="L:" goto DriveLetter
-if /i "%DriveLetter%"=="M:" goto DriveLetter
-if /i "%DriveLetter%"=="N:" goto DriveLetter
-if /i "%DriveLetter%"=="O:" goto DriveLetter
-if /i "%DriveLetter%"=="P:" goto DriveLetter
-if /i "%DriveLetter%"=="Q:" goto DriveLetter
-if /i "%DriveLetter%"=="R:" goto DriveLetter
-if /i "%DriveLetter%"=="S:" goto DriveLetter
-if /i "%DriveLetter%"=="T:" goto DriveLetter
-if /i "%DriveLetter%"=="U:" goto DriveLetter
-if /i "%DriveLetter%"=="V:" goto DriveLetter
-if /i "%DriveLetter%"=="W:" goto DriveLetter
-if /i "%DriveLetter%"=="X:" goto DriveLetter
-if /i "%DriveLetter%"=="Y:" goto DriveLetter
-if /i "%DriveLetter%"=="Z:" goto DriveLetter
+if /i "%DriveLetter%"=="A:" goto CheckExist
+if /i "%DriveLetter%"=="B:" goto CheckExist
+if /i "%DriveLetter%"=="C:" goto CheckExist
+if /i "%DriveLetter%"=="D:" goto CheckExist
+if /i "%DriveLetter%"=="E:" goto CheckExist
+if /i "%DriveLetter%"=="F:" goto CheckExist
+if /i "%DriveLetter%"=="G:" goto CheckExist
+if /i "%DriveLetter%"=="H:" goto CheckExist
+if /i "%DriveLetter%"=="I:" goto CheckExist
+if /i "%DriveLetter%"=="J:" goto CheckExist
+if /i "%DriveLetter%"=="K:" goto CheckExist
+if /i "%DriveLetter%"=="L:" goto CheckExist
+if /i "%DriveLetter%"=="M:" goto CheckExist
+if /i "%DriveLetter%"=="N:" goto CheckExist
+if /i "%DriveLetter%"=="O:" goto CheckExist
+if /i "%DriveLetter%"=="P:" goto CheckExist
+if /i "%DriveLetter%"=="Q:" goto CheckExist
+if /i "%DriveLetter%"=="R:" goto CheckExist
+if /i "%DriveLetter%"=="S:" goto CheckExist
+if /i "%DriveLetter%"=="T:" goto CheckExist
+if /i "%DriveLetter%"=="U:" goto CheckExist
+if /i "%DriveLetter%"=="V:" goto CheckExist
+if /i "%DriveLetter%"=="W:" goto CheckExist
+if /i "%DriveLetter%"=="X:" goto CheckExist
+if /i "%DriveLetter%"=="Y:" goto CheckExist
+if /i "%DriveLetter%"=="Z:" goto CheckExist
 echo Invalid Syntax!
 goto CheckExist
 
