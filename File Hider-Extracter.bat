@@ -13,7 +13,7 @@ set /p Input="What do you want to do? (1-3) "
 if /i "%Input%"=="1" goto 1
 if /i "%Input%"=="2" goto 2
 if /i "%Input%"=="2" goto 3
-echo Invalid Syntax
+echo Invalid Syntax!
 echo.
 goto Start
 
