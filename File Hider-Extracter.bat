@@ -33,6 +33,7 @@ type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
 pause >nul
+echo.
 goto Start
 
 :NotHide1
@@ -59,6 +60,7 @@ if errorlevel 1 goto Error
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%". Press any key to go to the main menu.
 pause >nul
+echo.
 goto Start
 
 :NotShow1
