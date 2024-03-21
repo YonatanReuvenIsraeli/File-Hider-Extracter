@@ -33,7 +33,7 @@ type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
 pause >nul
-goto Main
+goto Start
 
 :NotHide1
 echo "%Hide1%" does not exist!
@@ -59,7 +59,7 @@ if errorlevel 1 goto Error
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%". Press any key to go to the main menu.
 pause >nul
-goto Main
+goto Start
 
 :NotShow1
 echo "%Show1%" does not exist!
@@ -69,7 +69,8 @@ goto 2
 echo.
 echo Error! File not found. Please try again.
 goto 2
-
+
+
 :3
 endlocal
 exit
