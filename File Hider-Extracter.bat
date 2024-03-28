@@ -56,7 +56,7 @@ echo.
 set Show3=
 set /p Show3="What do you want the full path of the extracted file to be? "
 expand "%Show1%":"%Show2%" "%Show3%"
-if errorlevel 1 goto Error
+if not exist "%Show3%" goto Error
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%". Press any key to go to the main menu.
 pause >nul
