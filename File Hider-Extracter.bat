@@ -24,7 +24,7 @@ set /p Hide1="What is the full path to the file are you trying to hide? "
 if not exist "%Hide1%" goto NotHide1
 echo.
 set Hide2=
-set /p Hide2="What is the full path to the file that you want to hide %Hide1% in? "
+set /p Hide2="What is the full path to the file that you want to hide "%Hide1%" in? "
 if not exist "%Hide2%" goto NotHide2
 echo.
 set Hide3=
