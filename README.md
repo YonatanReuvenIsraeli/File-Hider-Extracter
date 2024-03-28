@@ -1,2 +1,4 @@
 # File Hider/Extacter
-This tool allows you to hide and extract alternate data streams in Windows.
+
+## Notes:
+You can't extract lower than the "%USERPROFILE%" without running it as an administrator.
