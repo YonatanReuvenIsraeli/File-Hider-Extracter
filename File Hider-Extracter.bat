@@ -59,8 +59,9 @@ if not exist "%Show3%" goto Error1
 echo.
 set Show4=
 set /p Show4="What to you want the extracted file do be named? "
+if exist "%Show3%\%Show4%" goto Error2
 expand "%Show1%":"%Show2%" "%Show3%\%Show4%"
-if not exist "%Show3%\%Show4%" goto Error2
+if not exist "%Show3%\%Show4%" goto Error3
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
 pause >nul
@@ -77,6 +78,11 @@ echo Error! Path not found. Please try again.
 goto 2
 
 :Error2
+echo.
+echo Error! File already exists. Please try again.
+goto 2
+
+:Error3
 echo.
 echo Error! Invalid file name. Please try again.
 goto 2
