@@ -54,11 +54,15 @@ set Show2=
 set /p Show2="What is the name of the alternate data stream? "
 echo.
 set Show3=
-set /p Show3="What do you want the full path of the extracted file to be? "
-expand "%Show1%":"%Show2%" "%Show3%"
-if not exist "%Show3%" goto Error
+set /p Show3="What do you want the full path to the folder of the extracted file to be? "
+if not exist "%Show3%" goto Error1
 echo.
-echo Alternate data stream exracted! Your extracted file is at "%Show3%". Press any key to go to the main menu.
+set Show4=
+set /p Show4="What to you want the extracted file do be named? "
+expand "%Show1%":"%Show2%" "%Show3%\%Show4%"
+if not exist "%Show3%\%Show4%" goto Error2
+echo.
+echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
 pause >nul
 echo.
 goto Start
@@ -67,9 +71,14 @@ goto Start
 echo "%Show1%" does not exist!
 goto 2
 
-:Error
+:Error1
 echo.
-echo Error! File not found. Please try again.
+echo Error! Path not found. Please try again.
+goto 2
+
+:Error2
+echo.
+echo Error! Invalid file name. Please try again.
 goto 2
 
 :3
