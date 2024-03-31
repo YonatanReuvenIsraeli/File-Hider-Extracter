@@ -1,9 +1,11 @@
 @echo off
 setlocal
 title File Hider/Extracter
+echo File Hider/Extracter v1.0
 goto Start
 
 :Start
+echo.
 echo Do you want to-
 echo [1] Hide File
 echo [2] Extract File
@@ -14,7 +16,6 @@ if /i "%Input%"=="1" goto 1
 if /i "%Input%"=="2" goto 2
 if /i "%Input%"=="2" goto 3
 echo Invalid Syntax!
-echo.
 goto Start
 
 :1
@@ -33,7 +34,6 @@ type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
 pause >nul
-echo.
 goto Start
 
 :NotHide1
@@ -83,7 +83,6 @@ goto 2
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
 pause >nul
-echo.
 goto Start
 
 :3
