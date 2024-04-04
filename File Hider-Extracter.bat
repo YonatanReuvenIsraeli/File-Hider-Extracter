@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title File Hider/Extracter
-echo File Hider/Extracter v1.0
+echo File Hider/Extracter v1.0.0
 goto Start
 
 :Start
