@@ -1,12 +1,11 @@
 @echo off
 setlocal
 title File Hider/Extracter
-echo File Hider/Extracter v1.0.0
+echo File Hider/Extracter v1.0.1
 goto Start
 
 :Start
 echo.
-echo Do you want to-
 echo [1] Hide File
 echo [2] Extract File
 echo [3] Close
