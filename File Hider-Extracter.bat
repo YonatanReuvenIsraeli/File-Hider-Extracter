@@ -1,7 +1,7 @@
 @echo off
 setlocal
 title File Hider/Extracter
-echo File Hider/Extracter v1.0.1
+echo File Hider/Extracter v1.0.2
 goto Start
 
 :Start
@@ -32,7 +32,7 @@ set /p Hide3="What will you like to name this alternate data stream? "
 type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
-pause >nul
+pause > nul
 goto Start
 
 :NotHide1
@@ -81,7 +81,7 @@ goto 2
 :Success
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
-pause >nul
+pause > nul
 goto Start
 
 :3
