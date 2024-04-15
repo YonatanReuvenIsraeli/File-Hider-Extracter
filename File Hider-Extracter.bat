@@ -2,7 +2,7 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.1.0
+echo Version: 1.1.1
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -36,7 +36,7 @@ set /p Hide3="What will you like to name this alternate data stream? "
 type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
-pause > nul
+pause > nul 2>&1
 goto Start
 
 :NotHide1
@@ -85,7 +85,7 @@ goto 2
 :Success
 echo.
 echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
-pause > nul
+pause > nul 2>&1
 goto Start
 
 :3
