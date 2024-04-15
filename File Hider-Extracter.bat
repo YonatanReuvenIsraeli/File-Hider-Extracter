@@ -1,7 +1,11 @@
 @echo off
 setlocal
 title File Hider/Extracter
-echo File Hider/Extracter v1.0.2
+echo Program Name: File Hider/Extracter
+echo Version: 1.1.0
+echo Developer: @YonatanReuvenIsraeli
+echo Website: https://www.yonatanreuvenisraeli.dev
+echo License: GNU General Public License v3.0
 goto Start
 
 :Start
