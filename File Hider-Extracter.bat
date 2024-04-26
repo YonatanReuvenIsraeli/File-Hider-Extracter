@@ -2,7 +2,7 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.2.0
+echo Version: 1.2.1
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -37,7 +37,7 @@ goto Overwrite
 
 :Overwrite
 set overwrite=
-set /p overwrite="This will overwrite an alternate data stream with the same name at "%Hide1%". Are you sure you want to continue? (Yes/No)
+set /p overwrite="This will overwrite an alternate data stream with the same name at "%Hide1%" if it exists. Are you sure you want to continue? (Yes/No)
 if /i "%overwrite%"=="Yes" goto Hide
 if /i "%overwrite%"=="No" goto Start
 echo Invalid Syntax!
