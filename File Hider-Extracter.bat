@@ -2,7 +2,7 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.1.2
+echo Version: 1.1.3
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -79,7 +79,7 @@ goto 2
 
 :Error2
 echo.
-echo Error! File already exists. Please rename "%Show3%\%Show4%" or move "%Show3%\%Show4%" and try again.
+echo Error! File already exists. Please rename "%Show3%\%Show4%" or move "%Show3%\%Show4%" to another location and try again.
 goto 2
 
 :Success
