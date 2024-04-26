@@ -2,7 +2,7 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.1.3
+echo Version: 1.2.0
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -33,6 +33,17 @@ if not exist "%Hide2%" goto NotHide2
 echo.
 set Hide3=
 set /p Hide3="What will you like to name this alternate data stream? "
+goto Overwrite
+
+:Overwrite
+set overwrite=
+set /p overwrite="This will overwrite an alternate data stream with the same name at "%Hide1%". Are you sure you want to continue? (Yes/No)
+if /i "%overwrite%"=="Yes" goto Hide
+if /i "%overwrite%"=="No" goto Start
+echo Invalid Syntax!
+goto Overwrite
+
+:Hide
 type "%Hide1%" > "%Hide2%":"%Hide3%"
 echo.
 echo Alternate data stream created! Press any key to go to the main menu.
