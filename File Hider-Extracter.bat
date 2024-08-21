@@ -2,7 +2,7 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.3.3
+echo Version: 1.3.4
 echo Developer: @YonatanReuvenIsraeli
 echo Website: https://www.yonatanreuvenisraeli.dev
 echo License: GNU General Public License v3.0
@@ -13,6 +13,7 @@ echo.
 echo [1] Hide File
 echo [2] Extract File
 echo [3] Close
+echo.
 echo.
 set Input=
 set /p Input="What do you want to do? (1-3) "
