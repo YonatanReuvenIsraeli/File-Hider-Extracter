@@ -1,4 +1,4 @@
-# File Hider/Extacter v1.3.2
+# File Hider/Extacter v1.3.3
 
 ## Notes:
 You can't extract lower than "%USERPROFILE%" without running it as an administrator.
