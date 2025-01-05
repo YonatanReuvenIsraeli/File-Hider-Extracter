@@ -2,18 +2,18 @@
 setlocal
 title File Hider/Extracter
 echo Program Name: File Hider/Extracter
-echo Version: 1.3.8
+echo Version: 1.3.9
 echo License: GNU General Public License v3.0
 echo Developer: @YonatanReuvenIsraeli
 echo GitHub: https://github.com/YonatanReuvenIsraeli
-echo Sponsor: https://github.com/sponsors/YonatanReuvenIsraeli 
+echo Sponsor: https://github.com/sponsors/YonatanReuvenIsraeli
 goto "Start"
 
 :"Start"
 echo.
-echo [1] Hide File
-echo [2] Extract File
-echo [3] Close
+echo [1] Hide file.
+echo [2] Extract file.
+echo [3] Close.
 echo.
 set Input=
 set /p Input="What do you want to do? (1-3) "
@@ -55,9 +55,10 @@ echo Invalid syntax!
 goto "Overwrite"
 
 :"Hide"
+echo.
+echo Creating alternate data stream.
 type "%Hide1%" > "%Hide2%":"%Hide3%" > nul 2>&1
 if not "%errorlevel%"=="0" goto "HideError"
-echo.
 echo Alternate data stream created! Press any key to go to the main menu.
 pause > nul 2>&1
 goto "Start"
@@ -82,9 +83,10 @@ echo.
 set Show4=
 set /p Show4="What to you want the extracted file do be named? "
 if exist "%Show3%\%Show4%" goto "ShowError2"
-expand "%Show1%":"%Show2%" "%Show3%\%Show4%" > nul 2>&1
-if not "%errorlevel%"=="0" goto "ShowError3"
 echo.
+echo Extracting alternate data stream.
+"%windir%\System32\expand.exe" "%Show1%":"%Show2%" "%Show3%\%Show4%" > nul 2>&1
+if not "%errorlevel%"=="0" goto "ShowError3"
 echo Alternate data stream exracted! Your extracted file is at "%Show3%\%Show4%". Press any key to go to the main menu.
 goto "Start"
 
